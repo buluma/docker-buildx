@@ -1,5 +1,5 @@
 ---
-name: ci
+name: BuildX Quick Start
 
 on:
   push:
