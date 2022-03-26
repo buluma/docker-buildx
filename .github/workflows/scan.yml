@@ -38,3 +38,4 @@ jobs:
           image: buluma/docker-buildx:latest
           annotations: true
           severity_threshold: HIGH
+          dockerfile: ./Dockerfile
