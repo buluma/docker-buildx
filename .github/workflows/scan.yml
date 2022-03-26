@@ -1,0 +1,25 @@
+name: scan ci
+
+on:
+  push:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: buluma/docker-buildx:latest
+      -
+        name: Scan for vulnerabilities
+        uses: crazy-max/ghaction-container-scan@v1
+        with:
+          image: buluma/docker-buildx:latest
+          annotations: true
