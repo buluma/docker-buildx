@@ -37,3 +37,4 @@ jobs:
         with:
           image: buluma/docker-buildx:latest
           annotations: true
+          severity_threshold: HIGH
