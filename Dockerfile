@@ -1,5 +1,7 @@
 FROM ubuntu:20.04
+
 LABEL maintainer="Michael Buluma"
+LABEL build_date="2023-11-26"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
