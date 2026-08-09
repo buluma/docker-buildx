@@ -11,6 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Docker Buildx
-        uses: buluma/setup-buildx-action@0.1.3
+        uses: buluma/setup-buildx-action@0.1.4
         with:
           config: .github/buildkitd.toml
