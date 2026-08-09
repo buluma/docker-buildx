@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check Docker Status
-        uses: crazy-max/ghaction-docker-status@v1
+        uses: crazy-max/ghaction-docker-status@v2
